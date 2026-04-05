@@ -2,12 +2,12 @@ import copy
 import sys
 
 
-input = sys.stdin.readline
-n, m = map(int, input().split())
+sys_input = sys.stdin.readline
+n, m = map(int, sys_input().split())
 graph = []
 cctv_positions = []
 for i in range(n):
-    row = list(map(int, input().split()))
+    row = list(map(int, sys_input().split()))
     graph.append(row)
     for j in range(m):
         if 0 < row[j] < 6: cctv_positions.append((i, j))

@@ -2,16 +2,16 @@ import heapq
 import sys
 
 
-input = sys.stdin.readline
-t = int(input())
+sys_input = sys.stdin.readline
+t = int(sys_input())
 for _ in range(t):
-    k = int(input())
+    k = int(sys_input())
     min_queue = []
     max_queue = []
     visited = [False] * 1000001
 
     for i in range(k):
-        operation, value = input().split()
+        operation, value = sys_input().split()
         value = int(value)
 
         if operation == "I":

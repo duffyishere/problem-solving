@@ -1,9 +1,9 @@
 pub fn pr_2559() {
-    let mut input = String::new();
-    io::stdin().read_line(&mut input).unwrap();
-    let input:Vec<usize> = input.split_ascii_whitespace().map(|x| x.trim().parse::<usize>().unwrap()).collect();
+    let mut sys_input = String::new();
+    io::stdin().read_line(&mut sys_input).unwrap();
+    let sys_input:Vec<usize> = sys_input.split_ascii_whitespace().map(|x| x.trim().parse::<usize>().unwrap()).collect();
 
-    let (n, k):(usize, usize) = (*input.get(0).unwrap(), *input.get(1).unwrap());
+    let (n, k):(usize, usize) = (*sys_input.get(0).unwrap(), *sys_input.get(1).unwrap());
 
     let mut num_list = String::new();
     io::stdin().read_line(&mut num_list).unwrap();

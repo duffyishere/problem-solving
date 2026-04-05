@@ -1,9 +1,9 @@
 import sys
 
 
-input = sys.stdin.readline
-n, k = map(int, input().split())
-coins = list(int(input().rstrip()) for _ in range(n))
+sys_input = sys.stdin.readline
+n, k = map(int, sys_input().split())
+coins = list(int(sys_input().rstrip()) for _ in range(n))
 idx = n - 1
 cnt = 0
 

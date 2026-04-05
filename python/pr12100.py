@@ -110,9 +110,9 @@ def main():
         return result
 
 
-    input = sys.stdin.readline
-    n = int(input().rstrip())
-    graph = [list(map(int, input().split())) for _ in range(n)]
+    sys_input = sys.stdin.readline
+    n = int(sys_input().rstrip())
+    graph = [list(map(int, sys_input().split())) for _ in range(n)]
     print(tilt(0))
 
 if __name__ == "__main__":

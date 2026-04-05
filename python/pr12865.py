@@ -1,9 +1,9 @@
 import sys
 
 
-input = sys.stdin.readline
-n, k = map(int, input().split())
-items = [list(map(int, input().split())) for _ in range(n)]
+sys_input = sys.stdin.readline
+n, k = map(int, sys_input().split())
+items = [list(map(int, sys_input().split())) for _ in range(n)]
 dp = [[0] * int(k + 1) for _ in range(n + 1)]
 
 for i in range(1, n + 1):

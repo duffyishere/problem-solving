@@ -3,10 +3,10 @@ import heapq
 import sys
 
 
-input = sys.stdin.readline
-n, k = map(int, input().split())
-crystal = [tuple(map(int, input().split())) for _ in range(n)]
-bags = [int(input()) for _ in range(k)]
+sys_input = sys.stdin.readline
+n, k = map(int, sys_input().split())
+crystal = [tuple(map(int, sys_input().split())) for _ in range(n)]
+bags = [int(sys_input()) for _ in range(k)]
 crystal.sort(key=lambda x: x[0])
 bags.sort()
 

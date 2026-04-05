@@ -3,9 +3,9 @@ import heapq
 import sys
 
 
-input = sys.stdin.readline
-n = int(input())
-a = [int(input()) for _ in range(n)]
+sys_input = sys.stdin.readline
+n = int(sys_input())
+a = [int(sys_input()) for _ in range(n)]
 heap = []
 count = {}
 

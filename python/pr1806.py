@@ -1,9 +1,9 @@
 import sys
 
 
-input = sys.stdin.readline
-n, s = map(int, input().split())
-a = list(map(int, input().split()))
+sys_input = sys.stdin.readline
+n, s = map(int, sys_input().split())
+a = list(map(int, sys_input().split()))
 
 left, right = 0, 0
 total = a[left]

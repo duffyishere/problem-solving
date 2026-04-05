@@ -1,9 +1,9 @@
 import sys
 
 
-input = sys.stdin.readline
-n, m = map(int, input().split())
-cell = [list(map(int, input().split())) for _ in range(n)]
+sys_input = sys.stdin.readline
+n, m = map(int, sys_input().split())
+cell = [list(map(int, sys_input().split())) for _ in range(n)]
 selected_chickens = []
 def combinations(startIdx: int, arr: list, selected: list = []):
     if m == len(selected):

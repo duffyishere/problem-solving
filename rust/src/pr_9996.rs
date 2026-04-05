@@ -12,12 +12,12 @@ pub fn pr_9996() {
 
     let mut result:Vec<String> = vec![];
     for _ in 0..m {
-        let mut input = String::new();
-        io::stdin().read_line(&mut input).unwrap();
-        input = input.trim().parse::<String>().unwrap();
+        let mut sys_input = String::new();
+        io::stdin().read_line(&mut sys_input).unwrap();
+        sys_input = sys_input.trim().parse::<String>().unwrap();
 
-        let fist_word = input[0..first_patter.len()].to_string();
-        let last_word = input[input.len()-last_patter.len()..].to_string();
+        let fist_word = sys_input[0..first_patter.len()].to_string();
+        let last_word = sys_input[sys_input.len()-last_patter.len()..].to_string();
 
         if first_patter == fist_word && last_patter == last_word {
             result.push("DA".to_string());

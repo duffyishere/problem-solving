@@ -2,9 +2,9 @@ import sys
 
 
 def main():
-    input = sys.stdin.readline
-    n = int(input().rstrip())
-    a = list(map(str, input().split()))
+    sys_input = sys.stdin.readline
+    n = int(sys_input().rstrip())
+    a = list(map(str, sys_input().split()))
     max_result = "0"
     min_result = "9999999999"
 

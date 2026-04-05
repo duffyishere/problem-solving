@@ -1,9 +1,9 @@
 import sys
 
 
-input = sys.stdin.readline
-n, s = map(int, input().split())
-nums = list(map(int, input().split()))
+sys_input = sys.stdin.readline
+n, s = map(int, sys_input().split())
+nums = list(map(int, sys_input().split()))
 visited_total_idx = []
 
 def recursive(total = 0, idx = 0):

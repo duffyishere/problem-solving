@@ -1,16 +1,16 @@
 fn pr_2468() {
-    let mut input = String::new();
-    io::stdin().read_line(&mut input).unwrap();
-    let m = input.trim().parse::<usize>().unwrap();
+    let mut sys_input = String::new();
+    io::stdin().read_line(&mut sys_input).unwrap();
+    let m = sys_input.trim().parse::<usize>().unwrap();
 
     let mut map:Vec<Vec<usize>> = vec![vec![0; m]; m];
 
     for i in 0..m {
-        let mut input = String::new();
-        io::stdin().read_line(&mut input).unwrap();
-        let input:Vec<usize> = input.trim().split_ascii_whitespace().map(|x| x.trim().parse::<usize>().unwrap()).collect();
+        let mut sys_input = String::new();
+        io::stdin().read_line(&mut sys_input).unwrap();
+        let sys_input:Vec<usize> = sys_input.trim().split_ascii_whitespace().map(|x| x.trim().parse::<usize>().unwrap()).collect();
         for j in 0..m {
-            map[i][j] = input[j];
+            map[i][j] = sys_input[j];
         }
     }
 

@@ -5,10 +5,10 @@ import sys
 def dec(x): 
     return x - 1
 
-input = sys.stdin.readline
-n, m = map(int, input().split())
-start_y, start_x, target_y, tartget_x = map(dec, map(int, input().split()))
-graph = [list(map(str, input().rstrip())) for _ in range(n)]
+sys_input = sys.stdin.readline
+n, m = map(int, sys_input().split())
+start_y, start_x, target_y, tartget_x = map(dec, map(int, sys_input().split()))
+graph = [list(map(str, sys_input().rstrip())) for _ in range(n)]
 
 directions = [(1, 0), (0, 1), (-1, 0), (0, -1)]
 queue = deque()

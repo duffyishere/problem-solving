@@ -3,8 +3,8 @@ import sys
 
 
 def main():
-    input = sys.stdin.readline
-    n, m = map(int, input().split())
+    sys_input = sys.stdin.readline
+    n, m = map(int, sys_input().split())
     graph = []
 
     swan_y, swan_x = 0, 0
@@ -15,7 +15,7 @@ def main():
     water_tmp = deque()
     water_visited = [[0] * m for _ in range(n)]
     for i in range(n):
-        row = list(input().rstrip())
+        row = list(sys_input().rstrip())
         graph.append(row)
         for j in range(m):
             if graph[i][j] == "." or graph[i][j] == "L":

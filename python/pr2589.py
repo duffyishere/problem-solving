@@ -2,9 +2,9 @@ from collections import deque
 import sys
 
 
-input = sys.stdin.readline
-n, m = map(int, input().split())
-cell = [list(input().rstrip()) for _ in range(n)]
+sys_input = sys.stdin.readline
+n, m = map(int, sys_input().split())
+cell = [list(sys_input().rstrip()) for _ in range(n)]
 
 def bfs(start_y, start_x):
     directions = [[1, 0], [0, 1], [-1, 0], [0, -1]]

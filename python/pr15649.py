@@ -1,8 +1,8 @@
 import sys
 
 
-input = sys.stdin.readline
-n, m = map(int, input().split())
+sys_input = sys.stdin.readline
+n, m = map(int, sys_input().split())
 
 def combi(arr: list):
     if len(arr) == m:

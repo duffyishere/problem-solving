@@ -1,9 +1,9 @@
 import sys
 
 
-input = sys.stdin.readline
-n = int(input().rstrip())
-nums = list(map(int, input().split()))
+sys_input = sys.stdin.readline
+n = int(sys_input().rstrip())
+nums = list(map(int, sys_input().split()))
 sorted_nums = sorted(list(set(nums)))
 
 def find_left_idx(target: int, nums: list):

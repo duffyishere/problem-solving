@@ -1,8 +1,8 @@
 import sys
 
 
-input = sys.stdin.readline
-n = int(input().rstrip())
+sys_input = sys.stdin.readline
+n = int(sys_input().rstrip())
 
 def recursive(curr, check1: list, check2: list, check3: list):
     if curr == n:

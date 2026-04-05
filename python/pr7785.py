@@ -1,11 +1,11 @@
 import sys
 
 
-input = sys.stdin.readline
-n = int(input())
+sys_input = sys.stdin.readline
+n = int(sys_input())
 logs = dict()
 for _ in range(n):
-    name, status = input().split()
+    name, status = sys_input().split()
     if name in logs:
         logs.pop(name)
     else:

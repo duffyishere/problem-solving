@@ -1,9 +1,9 @@
 import sys
 
 
-input = sys.stdin.readline
-n = int(input())
-request_list = sorted([list(map(int, input().split())) for _ in range(n)])
+sys_input = sys.stdin.readline
+n = int(sys_input())
+request_list = sorted([list(map(int, sys_input().split())) for _ in range(n)])
 cnt = 1
 min_end = 2147483647
 

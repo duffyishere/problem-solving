@@ -1,14 +1,14 @@
 import sys
 
 
-input = sys.stdin.readline
-n = int(input())
-m = int(input())
+sys_input = sys.stdin.readline
+n = int(sys_input())
+m = int(sys_input())
 INF = 0x3f3f3f3f
 adj = [list(INF for _ in range(n + 1)) for _ in range(n + 1)]
 
 for _ in range(m):
-    i, j, c = map(int, input().split())
+    i, j, c = map(int, sys_input().split())
     adj[i][j] = min(adj[i][j], c)
 
 for i in range(1, n + 1):

@@ -1,9 +1,9 @@
 import sys
 
 
-input = sys.stdin.readline
-n = int(input().rstrip())
-graph = [list(map(str, input().rstrip())) for _ in range(n)]
+sys_input = sys.stdin.readline
+n = int(sys_input().rstrip())
+graph = [list(map(str, sys_input().rstrip())) for _ in range(n)]
 
 values = []
 for line in graph:

@@ -10,10 +10,10 @@ pub fn pr_9375() {
         let mut dress_map:HashMap<String, usize> = HashMap::new();
 
         for _ in 0..n { // 의상의 수
-            let mut input = String::new();
-            io::stdin().read_line(&mut input).unwrap();
-            let input:Vec<String> = input.split_ascii_whitespace().map(|x| x.trim().parse::<String>().unwrap()).collect();
-            let category:String = input.last().unwrap().to_owned();
+            let mut sys_input = String::new();
+            io::stdin().read_line(&mut sys_input).unwrap();
+            let sys_input:Vec<String> = sys_input.split_ascii_whitespace().map(|x| x.trim().parse::<String>().unwrap()).collect();
+            let category:String = sys_input.last().unwrap().to_owned();
 
             let dress_count = dress_map.get(&category);
             if dress_count.is_none() {

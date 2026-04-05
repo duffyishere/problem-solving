@@ -1,10 +1,10 @@
 import sys
 
 
-input = sys.stdin.readline
-n, m = map(int, input().split())
-a = list(map(int, input().split()))
-b = list(map(int, input().split()))
+sys_input = sys.stdin.readline
+n, m = map(int, sys_input().split())
+a = list(map(int, sys_input().split()))
+b = list(map(int, sys_input().split()))
 a_idx, b_idx = 0, 0
 result = []
 

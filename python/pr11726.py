@@ -1,8 +1,8 @@
 import sys
 
 
-input = sys.stdin.readline
-n = int(input().rstrip())
+sys_input = sys.stdin.readline
+n = int(sys_input().rstrip())
 mod = 10007
 d = [0] * 10005
 d[1] = 1

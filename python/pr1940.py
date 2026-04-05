@@ -1,10 +1,10 @@
 import sys
 
 
-input = sys.stdin.readline
-n = int(input().rstrip())
-m = int(input().rstrip())
-numbers = map(int, input().rstrip().split())
+sys_input = sys.stdin.readline
+n = int(sys_input().rstrip())
+m = int(sys_input().rstrip())
+numbers = map(int, sys_input().rstrip().split())
 numbers = sorted(numbers)
 
 result = 0

@@ -1,16 +1,16 @@
 fn pr_2583() {
-    let mut input = String::new();
-    io::stdin().read_line(&mut input).unwrap();
-    let input:Vec<usize> = input.trim().split_ascii_whitespace().map(|x| x.trim().parse::<usize>().unwrap()).collect();
-    let (m, n, k) = (input[0], input[1], input[2]);
+    let mut sys_input = String::new();
+    io::stdin().read_line(&mut sys_input).unwrap();
+    let sys_input:Vec<usize> = sys_input.trim().split_ascii_whitespace().map(|x| x.trim().parse::<usize>().unwrap()).collect();
+    let (m, n, k) = (sys_input[0], sys_input[1], sys_input[2]);
 
     let mut map:Vec<Vec<usize>> = vec![vec![0; n+1]; m+1];
 
     for _ in 0..k {
-        let mut input = String::new();
-        io::stdin().read_line(&mut input).unwrap();
-        let input:Vec<usize> = input.trim().split_ascii_whitespace().map(|x| x.trim().parse::<usize>().unwrap()).collect();
-        let (s_x, s_y, e_x, e_y) = (input[0], input[1], input[2], input[3]);
+        let mut sys_input = String::new();
+        io::stdin().read_line(&mut sys_input).unwrap();
+        let sys_input:Vec<usize> = sys_input.trim().split_ascii_whitespace().map(|x| x.trim().parse::<usize>().unwrap()).collect();
+        let (s_x, s_y, e_x, e_y) = (sys_input[0], sys_input[1], sys_input[2], sys_input[3]);
 
         for i in s_y..e_y {
             for j in s_x..e_x {

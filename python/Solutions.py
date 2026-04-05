@@ -1,8 +1,8 @@
 def pr1972A():
-    for _ in range(int(input())):
-        n = int(input())
-        a = list(map(int, input().split()))
-        b = list(map(int, input().split()))
+    for _ in range(int(sys_input())):
+        n = int(sys_input())
+        a = list(map(int, sys_input().split()))
+        b = list(map(int, sys_input().split()))
 
         res, a_idx, b_idx = 0, 0, 0
         while a_idx < n and b_idx < n:
@@ -15,9 +15,9 @@ def pr1972A():
         print(res)
 
 def pr1972B():
-    for _ in range(int(input())):
-        _ = input()
-        coins = input()
+    for _ in range(int(sys_input())):
+        _ = sys_input()
+        coins = sys_input()
         cnt = 0
         for c in coins:
             if c == "U":
@@ -29,8 +29,8 @@ def pr1972B():
             print("YES")
 
 def pr1973A():
-    for _ in range(int(input())):
-        scores = list(map(int, input().split()))
+    for _ in range(int(sys_input())):
+        scores = list(map(int, sys_input().split()))
         if sum(scores) % 2 == 1:
             print(-1)
             continue
@@ -38,9 +38,9 @@ def pr1973A():
         print(scores[0] + min(scores[1], int((scores[1] + scores[2] - scores[0]) / 2)))
 
 def pr1969c():
-    for _ in range(int(input())):
-        n: int = int(input())
-        nums = list(map(int, input().split()))
+    for _ in range(int(sys_input())):
+        n: int = int(sys_input())
+        nums = list(map(int, sys_input().split()))
         res = [None] * n
         res[0] = 600
         for i in range(1, n):

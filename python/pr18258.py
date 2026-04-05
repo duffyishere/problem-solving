@@ -2,13 +2,13 @@ from collections import deque
 import sys
 
 def pr18258():
-    input = sys.stdin.readline
+    sys_input = sys.stdin.readline
     queue = deque()
-    line = int(input())
+    line = int(sys_input())
     out = []
 
     for __ in range(line):
-        cmd = input().split()
+        cmd = sys_input().split()
         if cmd[0] == "push":
             queue.appendleft(cmd[1])
         elif cmd[0] == "pop":

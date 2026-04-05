@@ -1,11 +1,11 @@
 import sys
 
 
-input = sys.stdin.readline
-n = int(input())
+sys_input = sys.stdin.readline
+n = int(sys_input())
 a = [[] for _ in range(26)]
 for _ in range(n):
-    parent, left, right = map(lambda n1: ord(n1) - 65, input().split())
+    parent, left, right = map(lambda n1: ord(n1) - 65, sys_input().split())
     a[parent].append(left)
     a[parent].append(right)
 

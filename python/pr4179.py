@@ -2,9 +2,9 @@ from collections import deque
 import sys
 
 
-input = sys.stdin.readline
-N, M = map(int, input().split())
-graph = [list(input().rstrip()) for _ in range(N)]
+sys_input = sys.stdin.readline
+N, M = map(int, sys_input().split())
+graph = [list(sys_input().rstrip()) for _ in range(N)]
 
 MAX = 2147483647
 fire_visited = [[MAX] * M for _ in range(N)]

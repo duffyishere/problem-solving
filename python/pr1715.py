@@ -2,9 +2,9 @@ import heapq
 import sys
 
 
-input = sys.stdin.readline
-n = int(input())    
-q = sorted([int(input()) for _ in range(n)])
+sys_input = sys.stdin.readline
+n = int(sys_input())    
+q = sorted([int(sys_input()) for _ in range(n)])
 result = 0
 
 while 1 < len(q):

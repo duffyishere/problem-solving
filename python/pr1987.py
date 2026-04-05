@@ -3,9 +3,9 @@ import sys
 
 
 def main():
-    input = sys.stdin.readline
-    n, m = map(int, input().split())
-    graph = [input().rstrip() for _ in range(n)]
+    sys_input = sys.stdin.readline
+    n, m = map(int, sys_input().split())
+    graph = [sys_input().rstrip() for _ in range(n)]
 
     directions = [(1, 0), (0, 1), (-1, 0), (0, -1)]
     result = 1

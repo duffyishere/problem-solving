@@ -1,8 +1,8 @@
 import sys
 
 
-input = sys.stdin.readline
-n = int(input().rstrip())
+sys_input = sys.stdin.readline
+n = int(sys_input().rstrip())
 d = list([1000009] * (n + 1))
 d[0], d[1] = 0, 0
 prev = list([1000009] * (n + 1))

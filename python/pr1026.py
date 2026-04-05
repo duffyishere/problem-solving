@@ -1,10 +1,10 @@
 import sys
 
 
-input = sys.stdin.readline
-n = int(input().rstrip())
-a = sorted(list(map(int, input().split())))
-b = sorted(list(map(int, input().split())), reverse=True)
+sys_input = sys.stdin.readline
+n = int(sys_input().rstrip())
+a = sorted(list(map(int, sys_input().split())))
+b = sorted(list(map(int, sys_input().split())), reverse=True)
 
 result = 0
 for i in range(n):

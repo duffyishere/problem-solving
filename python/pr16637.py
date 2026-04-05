@@ -1,9 +1,9 @@
 import sys
 
 
-input = sys.stdin.readline
-N = int(input())
-EXPRESSION = input().rstrip()
+sys_input = sys.stdin.readline
+N = int(sys_input())
+EXPRESSION = sys_input().rstrip()
 
 num, oper = [], []
 for i in range(0, len(EXPRESSION)):

@@ -25,12 +25,12 @@ def paste(y, x, graph, sticker):
             if sticker[i][j] == 1:
                 graph[y + i][x + j] = 1
 
-input = sys.stdin.readline
-n, m, k = map(int, input().split())
+sys_input = sys.stdin.readline
+n, m, k = map(int, sys_input().split())
 graph = [[0] * m for _ in range(n)]
 for _ in range(k):
-    row, col = map(int, input().split())
-    sticker = [list(map(int, input().split())) for _ in range(row)]
+    row, col = map(int, sys_input().split())
+    sticker = [list(map(int, sys_input().split())) for _ in range(row)]
 
     for _ in range(4):
         already_paste = False

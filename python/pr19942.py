@@ -2,9 +2,9 @@ import sys
 
 
 intput = sys.stdin.readline
-n = int(input().rstrip())
-mp, mf, ms, mv = map(int, input().split())
-a = [list(map(int, input().split())) for _ in range(n)]
+n = int(sys_input().rstrip())
+mp, mf, ms, mv = map(int, sys_input().split())
+a = [list(map(int, sys_input().split())) for _ in range(n)]
 
 MAX = 7501
 min_cost = MAX 

@@ -1,11 +1,11 @@
 import sys
 
 
-input = sys.stdin.readline
-for _ in range(int(input())):
+sys_input = sys.stdin.readline
+for _ in range(int(sys_input())):
     clothes_type = {}
-    for _ in range(int(input())):
-        _, type = input().strip().split()
+    for _ in range(int(sys_input())):
+        _, type = sys_input().strip().split()
         clothes_type[type] = clothes_type.get(type, 1) + 1
 
     result = 1    

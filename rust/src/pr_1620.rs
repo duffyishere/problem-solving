@@ -1,19 +1,19 @@
 pub fn pr_1620() {
-    let mut input = String::new();
-    io::stdin().read_line(&mut input).unwrap();
-    let mut input:Vec<usize> = input.split_ascii_whitespace().map(|x| x.trim().parse::<usize>().unwrap()).collect();
-    let (n, m ):(usize, usize) = (input[0], input[1]);
+    let mut sys_input = String::new();
+    io::stdin().read_line(&mut sys_input).unwrap();
+    let mut sys_input:Vec<usize> = sys_input.split_ascii_whitespace().map(|x| x.trim().parse::<usize>().unwrap()).collect();
+    let (n, m ):(usize, usize) = (sys_input[0], sys_input[1]);
 
     let mut pokemon_map1:HashMap<String, usize> = HashMap::new();
     let mut pokemon_map2:HashMap<usize, String> = HashMap::new();
 
     for i in 1..n+1 {
-        let mut input = String::new();
-        io::stdin().read_line(&mut input).unwrap();
-        input = input.trim().parse::<String>().unwrap();
-        let input_clone = input.clone();
-        pokemon_map1.insert(input, i);
-        pokemon_map2.insert(i, input_clone);
+        let mut sys_input = String::new();
+        io::stdin().read_line(&mut sys_input).unwrap();
+        sys_input = sys_input.trim().parse::<String>().unwrap();
+        let sys_input_clone = sys_input.clone();
+        pokemon_map1.insert(sys_input, i);
+        pokemon_map2.insert(i, sys_input_clone);
     }
 
     for _ in 0..m {

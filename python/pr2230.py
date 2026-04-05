@@ -1,9 +1,9 @@
 import sys
 
 
-input = sys.stdin.readline
-n, m = map(int, input().split())
-a = sorted([int(input()) for _ in range(n)])
+sys_input = sys.stdin.readline
+n, m = map(int, sys_input().split())
+a = sorted([int(sys_input()) for _ in range(n)])
 left, right = 0, 0
 result = 3000000000
 

@@ -1,9 +1,9 @@
 import sys
 
 
-input = sys.stdin.readline
-n = int(input())
-stairs = [int(input()) for _ in range(n)]
+sys_input = sys.stdin.readline
+n = int(sys_input())
+stairs = [int(sys_input()) for _ in range(n)]
 d = [list([0] * 2) for _ in range(n + 1)]
 
 def recursive(idx):

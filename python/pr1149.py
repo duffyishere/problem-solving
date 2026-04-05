@@ -1,9 +1,9 @@
 import sys
 
 
-input = sys.stdin.readline
-n = int(input())
-prices = [list(map(int, input().split())) for _ in range(n)]
+sys_input = sys.stdin.readline
+n = int(sys_input())
+prices = [list(map(int, sys_input().split())) for _ in range(n)]
 d = [list([1000010] * 3) for _ in range(n)]
 d[0] = prices[0]
 

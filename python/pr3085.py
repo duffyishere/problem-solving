@@ -1,9 +1,9 @@
 import sys
 
 
-input = sys.stdin.readline
-n = int(input())
-board = [list(input().rstrip()) for _ in range(n)]
+sys_input = sys.stdin.readline
+n = int(sys_input())
+board = [list(sys_input().rstrip()) for _ in range(n)]
 
 def count_max_candy():
     max_cnt = 1

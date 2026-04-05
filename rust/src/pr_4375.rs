@@ -4,9 +4,9 @@ use std::fmt::Write;
 pub fn pr_4375() {
     let mut buffer = String::new();
     loop {
-        let mut input = String::new();
-        io::stdin().read_line(&mut input).unwrap();
-        let num = match input.trim().parse::<u32>() {
+        let mut sys_input = String::new();
+        io::stdin().read_line(&mut sys_input).unwrap();
+        let num = match sys_input.trim().parse::<u32>() {
             Ok(num) => { num }
             Err(_) => { break; }
         };

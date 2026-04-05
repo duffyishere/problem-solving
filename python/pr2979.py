@@ -1,14 +1,14 @@
 import sys
 
 
-input = sys.stdin.readline
-a, b, c = map(int, input().split())
+sys_input = sys.stdin.readline
+a, b, c = map(int, sys_input().split())
 b = b * 2
 c = c * 3
 array: int = [0 for _ in range(101)]
 
 for _ in range(3):
-    start, end = map(int, input().split())
+    start, end = map(int, sys_input().split())
     for i in range(start, end):
         if array[i] == 0:
             array[i] = a

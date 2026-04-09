@@ -1,3 +1,9 @@
+import sys
+
+
+def sys_input() -> str:
+    return sys.stdin.readline().rstrip()
+
 def pr1972A():
     for _ in range(int(sys_input())):
         n = int(sys_input())
